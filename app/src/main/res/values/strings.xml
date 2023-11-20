@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Undong</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="foodlens_app_token">[6cd0fe1b3eab40748375c12402f22ad3]</string>
+    <string name="foodlens_company_token">[e679543922ae410ea3a9f3cc2fa30651]</string>
+    <string name="pushup1">
+        1. 팔굽혀펴기 (기본)
+    - 자세 : 양팔을 어깨넓이보다 살짝 넓게 벌려서 바닥을 짚는다.
+
+    머리부터 발끝까지 일자가 되게하여 가슴이 바닥에 닿 을 정도로 내려갔다가 올라온다.
+
+    --자세 팁!--
+
+    1. 상체를 들어올린다는 느낌보다 양 손바닥으로 바닥 을 밀어낸다는 느낌으로 운동한다.
+
+    2. 복근과 허리근육을 포함한 코어근육에 단단히 힘을 주어 몸통의 흔들림이 없게한다.
+
+    - 효과(부위) : 기본 푸시업은 주로 가슴근육을 중점적 으로 발달시키며
+
+    부가적으로는 삼두근육(팔 뒤쪽)과 어깨근육(특히 앞 어깨)을 발달시킨다.
+    </string>
+    <string name="determine">체질량 지수(BMI)는 키에 맞는 건강한 체중 범위에 있는지 여부를 판단하는 데 도움이 됩니다..</string>
+    <string name="your_bmi">BMI</string>
+    <string name="zero">0.0</string>
+    <string name="normal_weight">정상체중입니다.</string>
+    <string name="_60">60</string>
+    <string name="weight_in_kgs">Weight (in KGs)</string>
+    <string name="under">저체중입니다.</string>
+    <string name="over">과체중입니다.</string>
+    <string name="height">키를 입력해주세요.</string>
+    <string name="weight">체중을 입력해주세요.</string>
+</resources>

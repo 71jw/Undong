@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    //색상
+    <solid android:color="#ffffffff"/>
+
+    //그라데이션
+    <gradient
+        android:startColor="#8BC34A"
+        android:centerColor="#D8D4CD"
+        android:endColor="#8BC34A"
+        android:angle="90"/>
+
+    //윤곽선
+    <stroke android:width="3dp"
+        android:color="#4CAF50" />
+
+    //모서리에서 띄워줌
+    <padding android:left="1dp"
+        android:top="1dp"
+        android:right="1dp"
+        android:bottom="1dp" />
+
+    //모서리 둥근 정도
+    <corners android:radius="150dp" />
+</shape>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 설정 탭을 담당하는 화면 -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".SettingTab">
+
+    <!-- "설정탭 개발 예정입니다!!" 메시지를 표시하는 텍스트뷰 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="설정탭 개발 예정입니다!!"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- "로그아웃" 버튼 -->
+    <Button
+        android:id="@+id/logoutbutton"
+        android:layout_width="343dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:text="로 그 아 웃"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <!-- "회원탈퇴" 버튼 -->
+    <Button
+        android:id="@+id/deleteIDbutton"
+        android:layout_width="343dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:text="회 원 탈 퇴"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <!-- "뒤로가기" 버튼 -->
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/backbutton"
+        android:text="뒤로가기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

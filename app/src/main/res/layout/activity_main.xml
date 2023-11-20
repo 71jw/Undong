@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 메인 화면을 위한 ConstraintLayout -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    tools:context=".MainActivity">
+
+    <!-- Health Me 로고 이미지뷰 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="145dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/healthme" />
+
+    <!-- 메뉴 버튼들을 담을 RelativeLayout -->
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <!-- BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation_menu" />
+    </RelativeLayout>
+
+    <!-- 유산소 버튼 -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="343dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="20dp"
+        android:foreground="@drawable/usanso"
+        android:text="유산소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+    <!-- 무산소 버튼 -->
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="343dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="20dp"
+        android:foreground="@drawable/musanso"
+        android:text="무산소"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <!-- 식단 버튼 -->
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="343dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="20dp"
+        android:foreground="@drawable/sikdan"
+        android:text="식단"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <!-- 커뮤니티 버튼 -->
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="343dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="20dp"
+        android:foreground="@drawable/community"
+        android:text="커뮤니티"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <!-- 설정 버튼 -->
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="@color/white"
+        android:foreground="@drawable/setting"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 배경 도형 -->
+    <item>
+        <shape android:shape="oval">
+            <stroke android:color="@color/orange" android:width="5dp"/>
+            <solid android:color="@color/yellow"/>
+            <size android:width="100dp" android:height="150dp"/>
+        </shape>
+    </item>
+
+</layer-list>
