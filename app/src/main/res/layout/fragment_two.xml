@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TwoFragment"
+    android:layout_marginBottom="30dp">
+
+    <!-- 세부 컨텐츠를 담을 LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <!-- 스크롤뷰 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50.0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <!-- 운동 목록을 담을 LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1.0dp"
+                android:orientation="vertical">
+
+                <!-- 첫 번째 운동 -->
+                <LinearLayout
+                    android:onClick="lunges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/lunge" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="런지
+                            (lunges)"
+                            android:textColor="#FF000000"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/lunges"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <!-- 두 번째 운동 -->
+                <LinearLayout
+                    android:onClick="highknees"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/highknees" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="하이 니즈
+                            (high knees)"
+                            android:textColor="#FF000000"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/highknees"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <LinearLayout
+                    android:onClick="turningkicks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/turningkicks" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="터닝 킥스
+                            (turning kicks)"
+                            android:textColor="#FF000000"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/turningkicks"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <LinearLayout
+                    android:onClick="climbers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/climbers" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="마운틴
+                            클라이머
+                            (moutain climbers)"
+                            android:textColor="#FF000000"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/climbers"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+
+                <LinearLayout
+                    android:onClick="plankjump"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/plankjump" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="플랭크 점프
+                            (plank jump ins)"
+                            android:textColor="#FF000000"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/plankjump"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <LinearLayout
+                    android:onClick="lungeup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/lungeup" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="런지 업
+                            (lunge step ups)"
+                            android:textColor="#FF000000"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/lungeup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

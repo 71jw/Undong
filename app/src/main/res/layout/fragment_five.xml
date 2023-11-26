@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FiveFragment">
+
+    <!-- 세부 컨텐츠를 담을 LinearLayout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <!-- 스크롤뷰 -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="50.0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <!-- 운동 목록을 담을 LinearLayout -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1.0dp"
+                android:orientation="vertical">
+
+                <!-- 첫 번째 운동 -->
+                <LinearLayout
+                    android:onClick="legcurls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/legcurls" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="레그 컬 (leg curls)"
+                            android:textColor="#FF000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/legcurls"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    />
+
+                <!-- 두 번째 운동 -->
+                <LinearLayout
+                    android:onClick="bicepcurls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/bicepcurls" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="이두 컬 (bicep curls)"
+                            android:textColor="#FF000000"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/bicepcurls"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기(덤벨 필요)"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+                <LinearLayout
+                    android:onClick="concentrationcurls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/concentrationcurl" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="컨센트레이션 컬
+                            (concentration curl)"
+                            android:textColor="#FF000000"
+                            android:textSize="12dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/concentationcurls"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기(덤벨 필요)"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+
+                <LinearLayout
+                    android:onClick="hammercurl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/hammercurl" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="해머 컬 (hammer curl)"
+                            android:textColor="#FF000000"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/hammercurl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기(덤벨 필요)"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+
+                <LinearLayout
+                    android:onClick="updownplank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:layout_marginTop="15.0dp"
+                    android:background="@drawable/backgroundcrop"
+                    android:orientation="horizontal">
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:layout_width="0dp"
+                        android:layout_height="150dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/updownplank" />
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="135dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/yeongduck"
+                            android:padding="10.0dp"
+                            android:text="업 다운  플랭크       (up down plank)"
+                            android:textColor="#FF000000"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <!-- 시작 버튼 -->
+                <Button
+                    android:id="@+id/updownplank"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10.0dp"
+                    android:onClick="startPushup1"
+                    android:text="운동 영상 보기"
+                    android:backgroundTint="@color/purple_200"
+                    android:textStyle="bold"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
