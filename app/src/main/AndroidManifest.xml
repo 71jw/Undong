@@ -3,10 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.undong">
 
-    <uses-permission android:name="android.permission.INTERNET">
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
-    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
 
@@ -14,9 +13,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@drawable/healthme2"
+        android:label="Health Me"
+        android:roundIcon="@drawable/healthme2"
         android:supportsRtl="true"
         android:theme="@style/Theme.Undong"
         android:usesCleartextTraffic="true"
@@ -26,8 +25,8 @@
             android:exported="false" />
 
         <meta-data
-            android:name="com.kakao.sdk.AppKey"
-            android:value="34362600934385020610ff577b784e07" />
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDKr5B3MAuQs_2CBmMRfrmkksKryOg6smw" />
         <!--
  <activity
             android:name=".LoginActivity"
@@ -104,6 +103,10 @@
             android:exported="false" />
         <activity
             android:name=".ManmomTab"
+            android:exported="false" />
+
+        <activity
+            android:name=".VideoTab"
             android:exported="false" />
         <activity
             android:name=".BmiCalTab"
